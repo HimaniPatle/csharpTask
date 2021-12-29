@@ -25,3 +25,24 @@ Console.ReadLine();
 }
 }
 }
+
+using System;
+using System.Linq;
+
+namespace LogicalPrograms
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string str = Console.ReadLine();
+            
+            string revWordString = string.Join(" ", str
+            .Split(' ')
+            .Select(x => new String(x.Reverse().ToArray())));
+
+            Console.WriteLine($" {revWordString}");
+            Console.ReadKey();
+        }      
+    }
+}
